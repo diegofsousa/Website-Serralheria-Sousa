@@ -1,0 +1,109 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Monda);
+
+section#corpo{
+	display: block;
+	margin-top: 10px;
+	width: 100%;
+	background-color: white;
+
+}
+
+section#corpo p{
+	padding: 10px;
+	font-family: 'Monda', sans-serif;
+}
+
+section#corpo h2{
+	font-size: 20pt;
+	text-align: center;
+}
+
+section#corpo h3{
+	font-family: 'Monda', sans-serif;
+	color: #646464;
+	text-align: center;
+}
+
+div#afastamento{
+	height: 90px;
+}
+
+div#master{
+	width: 100%;
+	height: 250px;
+}
+
+section#corpo p#texto{
+	border: 1px solid #646464;
+	padding-bottom: 2px;
+	text-align: center;
+	width: 450px;
+	margin-left: 380px;
+}
+
+div#master div#dadospessoais{
+	float: left;
+	width: 49%;
+	height: 250px;
+}
+
+div#master div#logradouro{
+	float: left;
+	width: 50%;
+	height: 250px;
+}
+
+div#orcamento{
+	width: 100%;
+	height: 350px;
+}
+
+section#corpo .form{
+	font-family: 'Monda', sans-serif;
+	padding: 4px;
+	margin: 0;
+}
+
+section#corpo .form input{
+	font-family: 'Monda', sans-serif;
+}
+
+div#dadospessoais p#tel{
+	position: relative;
+	margin-top: -56px;
+	margin-left: 85px;
+}
+
+div#logradouro p#bairro{
+	position: relative;
+	margin-top: -36px;
+	margin-left: 75px;
+}
+
+div#logradouro p#uf input#cUf{
+	position: relative;
+	margin-top: -36px;
+	margin-left: 230px;
+	z-index: 1;
+}
+
+div#logradouro p#cep{
+	position: relative;
+	margin-top: -36px;
+	margin-left: 290px;
+	z-index: 2;
+}
+
+div#orcamento p{
+	position: relative;
+	text-align: center;
+	margin-left: -30px;
+}
+
+div#orcamento input#cEnviar{
+	position: relative;
+	margin-left: 560px;
+	width: 130px;
+	height: 30px;
+}

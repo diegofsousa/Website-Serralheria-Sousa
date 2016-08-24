@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Serralheria Sousa</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+	<link rel="stylesheet" type="text/css" href="css/peca.css">
+	<script src="js/voltar.js"></script>
+	<script src="js/orcamento.js"></script>
+	<link rel="shortcut icon" href="imagens/favicon.ico" />
+</head>
+
+<header id="cabecalho">
+	<div id="img">
+	</div>
+
+	<nav id="menu">
+		<ul id ="menu-list">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="sobre.html">SOBRE &nabla;</a>
+				<ul>
+					<li><a href="sobre.html#empresa">Empresa</a></li>
+					<li><a href="sobre.html#principios">Princípios e Valores</a></li>
+				</ul>
+			</li>
+			<li><a href="#">GALERIA &nabla;</a>
+				<ul>
+					<li><a href="geleria.html#portoes">Portões</a></li>
+					<li><a href="galeria.html#portas">Portas</a></li>
+					<li><a href="galeria.html#janelas">Janelas</a></li>
+					<li><a href="galeria.html#cadeiras">Cadeiras</a></li>
+					<li><a href="">Acessórios</a></li>
+					<li><a href="">Outros</a></li>
+				</ul>
+			</li>
+			<li><a href="http://blogdaoficinass.blogspot.com/" target="_blank">NOTÍCIAS</a></li>
+			<li><a id="selecionado" href="#">CONTATO &nabla;</a>
+				<ul id="fica">
+					<li><a id="selcontato" href="#">Peça seu orçamento</a></li>
+					<li><a href="faleconosco.html">Fale conosco</a></li>
+				</ul>
+			</li>
+		</ul>
+
+	</nav>
+
+	<div id="pesquisa">
+			<figure id="figurap">
+				<img src="imagens/lupar.png" alt="lupa">
+			</figure>
+			
+				<input type="text" style="border:0;" id="txtBusca" placeholder=" "/>
+	</div>
+</header>
+
+<div id="afastamento"></div>
+<div id="interface">
+	
+	<div id="guia">
+			<p>Você está em <a href="index.html">Home</a> / <a href="faleconosco.html">Contato</a> / <a href="pecaseuorcamento.html">Peça seu Orçamento</a></p>
+	</div>
+
+	<section id="corpo">
+		<h2>Orçamento</h2>
+
+		<p id="texto">Faça um orçamento na nossa plataforma e receba no seu email o resultado.<br/>Tempo de resposta estimado: 2h.</p>
+
+		<form name="form1" action="confirmacaoOrcamento.html" method="post">
+			<div id="master">
+				<div id="dadospessoais">
+					<h3>Dados pessoais</h3>
+					<p class="form"><input type="text" name="tNome" id="cNome" size="60" maxlength="50" placeholder="*Nome"></p>
+					<p class="form"><input type="text" name="tEmail" id="cEmail" size="60" maxlength="60" placeholder="*Email"></p>
+					<p class="form" id="ddd"><input type="text" name="tDDD" id="cDDD" size="60" maxlength="13"  placeholder="*Telefone" onkeyup ="somenteTelefone(this)"></p>
+					
+				</div>
+				<div id="logradouro">
+					<h3>Logradouro</h3>
+					<p class="form"><input type="text" name="tEndereco" id="cEndereco" size="60" maxlength="50" placeholder="*Endereço"></p>
+					<p class="form"><input type="text" name="tComplemento" id="cCompemento" size="60" maxlength="50" placeholder="Complemento"></p>
+					<p class="form" id="numero"><input type="text" name="tNumero" id="cNumero" size="5" maxlength="5" onkeyup="somenteNumeros(this)" placeholder="Numero"></p>
+					<p class="form" id="bairro"><input type="text" name="tBairro" id="cBairro" size="30" maxlength="50" onkeyup="somenteLetras(this)" placeholder="*Bairro"></p>
+					<p class="form"><input type="text" name="tCidade" id="cCidade" size="30" maxlength="50" placeholder="*Cidade"></p>
+					<p class="form" id="uf"><input type="text" name="tUF" id="cUF" size="3" maxlength="2" onkeyup="somenteLetras(this)" placeholder="*UF"></p>
+					<p class="form" id="cep"><input type="text" name="tCEP" id="cCEP" size="12" maxlength="10" onkeyup ="somenteCPF(this)" placeholder="*CEP"></p>
+				</div>
+			</div>
+			<div id="orcamento">
+				<h3>Descrição do orçamento</h3>
+				<p class="form"><textarea name="tMsg" id="cMsg" cols="80" rows="13" placeholder="Descreva aqui seu orçamento"></textarea></p>
+			<input type="submit" name="bEnviar" id="cEnviar" value="Enviar requisição" onclick="return validar()"/>
+			</div>
+			
+		</form>
+	</section>	
+</div>
+
+<div id="afastarodape"></div>
+
+<div id="rodape">
+	<div id="rodleft">
+		<h3>Serralheria Sousa LTDA&copy; - Todos os direitos reservados</h3>
+		<p>Rua Sinhá Soido, 228<br/>Bairro: Oeiras Nova Cidade: Oeiras<br/>UF: PI<br/>CEP: 64500-000<br/>(89) 3462-2994<br/><br/><a href="mailto:diegofernando5672@gmail.com">diegofernando5672@gmail.com</a></p>
+	</div>
+	<div id="rodcenter">
+		<h3>Mapa do site</h3>
+		<ul id ="mapa">
+			<li><a id="prin" href="index.html">Página inicial</a></li>
+			<li><a id="prin1" href="sobre.html">Sobre</a>
+				<ul>
+					<li><a href="sobre.html#empresa">Empresa</a></li>
+					<li><a href="sobre.html#principios">Princípios e Valores</a></li>
+				</ul>
+			</li>
+			<li><a id="prin2" href="galeria.html">Galeria/Produtos</a></li>
+			<li> <a id="prin3" href="faleconosco.html">Contato</a>
+				<ul>
+					<li><a href="pecaseuorcamento.html">Peça seu orçamento</a></li>
+					<li><a href="faleconosco.html">Fale conosco</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div id="rodright">
+		<figure>
+			<img id="logorodape" src="imagens/logopararodape.png" alt="Logo Serralheria Sousa">
+		</figure>
+		<a href="http://facebook.com/serralheriasousaoeiras" target="_blank"><div id="rfacebook"></div></a>
+		<a href="http://youtube.com/thedieguinhofernando" target="_blank"><div id="ryoutube"></div></a>
+		<a href="http://twitter.com/diego5672" target="_blank"><div id="rtwitter"></div></a>
+	</div>
+	<div id="rodbottom">
+		<p>Desenvolvido por Diego Fernando. Copyright&copy; 2016. <a href="mailto:diegofernando5672@gmail.com">diegofernando5672@gmail.com</a></p>
+	</div>
+</div>
+
+<a id="botaotopo" href="#" title="Para o topo !">
+	<img src="imagens/voltar.png" alt="voltar" />
+</a>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Monda);
+
+/*divisão central*/
+
+section#corpo{
+	display: block;
+	float: left;
+	margin-top: 60px;
+	margin-left: -10px;
+	width: 950px;
+	background-color: white;
+}
+/*----------------*/
+
+section#corpo p{
+	padding: 10px;
+}
+
+section#corpo h2{
+	font-size: 20pt;
+	text-align: center;
+}
+
+section#corpo .nome{
+	text-align: right;
+	margin-right: 49px;
+}
+
+section#corpo div#clientes{
+	clear: both;
+	padding-top: 35px;
+	margin-left: 120px;
+	width: 70%;
+	
+}
+
+section#corpo div#clientes .fora{
+	border: 1px solid #646464;
+}
+
+section#corpo div#clientes em{
+	font-size: 14pt;
+	color: #646464;
+}
+
+/*divisao lateral*/
+
+aside#lateral{
+	display: block;
+	margin-top: 60px;
+	padding-left: 10px;
+	float: right;
+	width: 280px;
+	background-color: rgba(0,0,0,.5);
+}
+
+/*--------------------*/
+
+aside#lateral p{
+	padding: 10px;
+}
+
+aside#lateral h1{
+	color: white;
+}
+
+aside#lateral a#cliqueor{
+	transition: 500ms;
+	text-decoration: none;
+	color: black;
+	padding: 10px 73px 10px 73px;
+	background-color: #f1f1f1;
+	font-family: 'Monda', sans-serif;
+}
+
+aside#lateral a#cliqueor:hover{
+	background-color: #646464;
+	color: white;
+	transition: 500ms;
+}
+
+
+section#corpo .esquerda{
+	float: left;
+	width: 60%;
+}
+
+section#corpo .direita{
+	margin-top: 30px;
+	float: left;
+	width: 35%;
+}
+
+section#corpo .botao{
+	position: relative;
+	padding-top: 7px;
+	width: 170px;
+	height: 40px;
+	text-decoration: none;
+	color: black;
+	background-color: #646464;
+	margin-left: 190px;
+	font-family: 'Monda', sans-serif;
+}
+
+section#corpo .botao .bot{
+	margin: 0;
+	padding: 0;
+}
+
+
+section#corpo .botao:hover{
+	background-color: #646464;
+	color: white;
+	transition: 500ms;
+	box-shadow: 1px 1px 5px #000;
+}
+
+section#corpo figure figcaption{
+	font-family: 'Monda', sans-serif;
+	color: white;
+	position: relative;
+	display: block;
+	width: 124%;
+	height: 5%;
+	background-color: rgba(0,0,0,.3);
+	padding: 4px;
+	margin-top: -37px;
+}
+
+section#corpo .b{
+	margin-bottom: -10px;
+}
+
+aside#lateral a#imb div#imgb{
+	width: 265px;
+	height: 167px;
+	background-image: url(../imagens/bannerblogsf.png);
+	background-repeat: no-repeat;
+	padding-bottom: 10px;
+	transition: 1s;
+}
+
+aside#lateral iframe#face{
+	overflow: visible;
+	border: 0;
+	background-color: transparent;
+}

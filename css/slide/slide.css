@@ -1,0 +1,90 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Monda);
+
+@keyframes slide{
+
+	0%{
+		left: 0;
+	}
+	20%{
+		left: 0;
+	}
+	25%{
+		left: -100%;
+	}
+	45%{
+		left: -100%;
+	}
+	50%{
+		left: -200%;
+	}
+	70%{
+		left: -200%;
+	}
+	75%{
+		left: -300%;
+	}
+	95%{
+		left: -300%;
+	}
+	100%{
+		left: -400%;
+		left: 0;
+	}
+}
+div#slide{
+	overflow: hidden;
+}
+div#slide figure img{
+	width: 20%;
+	float: left;
+}
+
+div#slide figure{
+	position: relative;
+	width: 500%;
+	margin: 0;
+	padding-left: 8px;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 30s slide infinite;
+}
+
+div#slide figure h1{
+	float: left;
+	transition: 500ms;
+    font-family: 'Monda', sans-serif;
+    padding-left: 50px;
+    margin-left: -1270px;
+    padding-right: 20px;
+    font-size: 30pt;
+    text-shadow: black 0.5px 0.6px 1px;
+    color: rgba(253,253,253,0.9);
+    background-color: rgba(136,136,136, 0.5);
+    position: relative;
+    margin-top: 320px;
+}
+
+div#slide figure h1:hover{
+	transition: 500ms;
+    padding-left: 70px;
+    text-shadow: black 1px 1px 3px;
+    color: rgba(255,255,255,1);
+    background-color: rgba(136,136,136, 0.7);
+    position: relative;
+}
+
+div#slide figure h2{
+	text-align: right;
+	font-family: 'Monda', sans-serif;
+	float: left;
+	color: black;
+  	padding-left: 100px;
+  	padding-right: 20px;
+  	font-size: 15pt;
+  	background-color: rgba(136,136,136, 0.3);
+  	position: relative;
+  	margin-left: -1270px;
+  	margin-top: 385px;
+}
